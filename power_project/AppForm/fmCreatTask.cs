@@ -77,7 +77,7 @@ namespace power_project.AppForm
         }
 
         private void button_remove_Click(object sender, EventArgs e)
-        {
+        {  
             if(count1==0)
             {
                 MessageBox.Show("无可删除行数");

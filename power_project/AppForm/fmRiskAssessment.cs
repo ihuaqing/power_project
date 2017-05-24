@@ -126,7 +126,10 @@ namespace power_project.AppForm
         {
         }
 
-       
+        private void treeView2_AfterSelect_1(object sender, TreeViewEventArgs e)
+        {
+           
+        }
     }
 
 

@@ -37,6 +37,7 @@
             this.工作票评估ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.浏览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.数据管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -56,7 +57,7 @@
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1604, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1354, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -73,13 +74,13 @@
             // 登录ToolStripMenuItem
             // 
             this.登录ToolStripMenuItem.Name = "登录ToolStripMenuItem";
-            this.登录ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.登录ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.登录ToolStripMenuItem.Text = "登录";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             // 
             // 工作票ToolStripMenuItem
@@ -95,27 +96,37 @@
             // 建工作票ToolStripMenuItem
             // 
             this.建工作票ToolStripMenuItem.Name = "建工作票ToolStripMenuItem";
-            this.建工作票ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.建工作票ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.建工作票ToolStripMenuItem.Text = "建工作票";
             this.建工作票ToolStripMenuItem.Click += new System.EventHandler(this.建工作票ToolStripMenuItem_Click);
             // 
             // 工作票评估ToolStripMenuItem
             // 
             this.工作票评估ToolStripMenuItem.Name = "工作票评估ToolStripMenuItem";
-            this.工作票评估ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.工作票评估ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.工作票评估ToolStripMenuItem.Text = "风险评估";
             // 
             // 浏览ToolStripMenuItem
             // 
             this.浏览ToolStripMenuItem.Name = "浏览ToolStripMenuItem";
-            this.浏览ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.浏览ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.浏览ToolStripMenuItem.Text = "评估浏览";
             // 
             // 系统ToolStripMenuItem
             // 
+            this.系统ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.数据管理ToolStripMenuItem});
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
             this.系统ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.系统ToolStripMenuItem.Text = "系统";
+            this.系统ToolStripMenuItem.Click += new System.EventHandler(this.系统ToolStripMenuItem_Click);
+            // 
+            // 数据管理ToolStripMenuItem
+            // 
+            this.数据管理ToolStripMenuItem.Name = "数据管理ToolStripMenuItem";
+            this.数据管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.数据管理ToolStripMenuItem.Text = "数据管理";
+            this.数据管理ToolStripMenuItem.Click += new System.EventHandler(this.数据管理ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -129,9 +140,9 @@
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 860);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 711);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1604, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1354, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -157,7 +168,7 @@
             // 
             this.toolStrip1.Location = new System.Drawing.Point(0, 25);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1604, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1354, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -167,7 +178,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::power_project.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1604, 882);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -203,6 +214,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 数据管理ToolStripMenuItem;
     }
 }
 

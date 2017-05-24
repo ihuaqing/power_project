@@ -46,5 +46,16 @@ namespace power_project
             AppForm.fmCreatTask frm = new AppForm.fmCreatTask();
             frm.ShowDialog();
         }
+
+        private void 数据管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AppForm.DBManager dbm = new AppForm.DBManager();
+            dbm.ShowDialog();
+        }
+
+        private void 系统ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
